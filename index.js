@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+//getting the packages from node modules
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// TODO: Create an array of questions for user input
+// generating questions for user to answer
 const questions = [
   {
     type: "input",
@@ -48,7 +48,7 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// created a function to write using filesystem
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
@@ -62,16 +62,18 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   console.log("running");
-
+// using inquirer to prompt questions to users using question array
   inquirer
     .prompt(questions)
     .then((data) => {
       console.log(data);
-
+// creating a badge link 
       var badge = `https://img.shields.io/badge/license-${data.license}-green`
+      // creating a github link
       var githubLink = `https://www.github.com/${data.gitHubUsername}`
+      // creatong a mailto link
       var email = `mailto:${data.email}`
-
+// created table of contents 
       var tableOfContents =`
 # Table Of Contents
 * [Instructions](#instructions)
@@ -82,7 +84,7 @@ function init() {
       
       
       `;
-      
+      // getting everything in one string using the md file syntax
       var  readME = "";
 
 
@@ -115,54 +117,17 @@ ${data.guidelines}
 
 # [License](#license)
 ${data.license}      
-      
-      
-      
-      
-      
-      
-      
       `;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       writeToFile("custom.md", readME);
 
-  
-
-
 
     })
+    //catching the error if any
     .catch((err) => {
       console.log(err);
     });
 
-
-
-
-
-
 }
-
 // Function call to initialize app
 init();
