@@ -44,38 +44,122 @@ const questions = [
     type: "list",
     message: "Please choose one from the following project license:",
     name: "license",
-    choices: [
-      "MIT",
-      "mpl-2.0",
-      "Artistic-2.0",
-      "cc-by-sa-4.0",
-      "APACHE-2.0",
-    ],
+    choices: ["MIT", "mpl-2.0", "Artistic-2.0", "cc-by-sa-4.0", "APACHE-2.0"],
   },
-  
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) {
+      console.log(err);
+    }
+
+    console.log("Completed");
+  });
+}
 
 // TODO: Create a function to initialize app
 function init() {
+  console.log("running");
 
-console.log('running');
+  inquirer
+    .prompt(questions)
+    .then((data) => {
+      console.log(data);
+
+      var badge = `https://img.shields.io/badge/license-${data.license}-green`
+      var githubLink = `https://www.github.com/${data.gitHubUsername}`
+
+      var tableOfContents =`
+# Table Of Contents
+* [Instructions](#instructions)
+* [Information](#information)
+* [Guidelines](#guidelines)
+* [GithubUsername](#githubusername)
+* [Email](#email)
+* [License](#license)
+      
+      
+      `;
+      
+      var  readME = "";
 
 
-inquirer.prompt(questions).then((data)=>{
 
-    console.log(data);
+      readME = `
+# Title !["badge"](${badge})
+${data.title}
+
+# Description
+${data.description}
+
+${tableOfContents}
+
+# [Instructions](#instructions)
+${data.instructions}
+
+# [Information](#information)
+${data.information}
+
+# [Guidelines](#guidelines)
+${data.guidelines}
+
+# [GithubUsername](#githubusername)
+[${data.gitHubUsername}](${githubLink})
+
+# [Email](#email)
+${data.email}
+
+# [License](#license)
+${data.license}      
+      
+      
+      
+      
+      
+      
+      
+      `;
 
 
 
-    }).catch((err)=>{
-        console.log(err);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      writeToFile("custom.md", readME);
+
+  
+
+
+
+    })
+    .catch((err) => {
+      console.log(err);
     });
 
 
-  
+
+
+
+
 }
 
 // Function call to initialize app
