@@ -1,36 +1,37 @@
 
 # Title !["badge"](https://img.shields.io/badge/license-MIT-green)
-agdija
+Readme generator
 
 # Description
-jfh
+This application will help you to create README automatically and it is build with node.js using inquirer package
 
 
 # Table Of Contents
 * [Instructions](#instructions)
 * [Information](#information)
 * [Guidelines](#guidelines)
-* [GithubUsername](#githubusername)
-* [Email](#email)
+* [Questions](#questions)
 * [License](#license)
       
       
       
 
 # [Instructions](#instructions)
-sljdfh
+clone my giyHub repository and run the command node index.js 
 
 # [Information](#information)
-kjsdfh
+After you run answer the following questions asked and find custom.md generator
 
 # [Guidelines](#guidelines)
-jsdhf
+i cloned it from the potentila-engima repo then create a new folder and cloned it to my new repository 
 
-# [GithubUsername](#githubusername)
-[Parth0415](https://www.github.com/Parth0415)
+# [Questions](#questions)
+## If any questions, please reach me out on the github or on the specified email address.
+  Github Username:
+  [Parth0415](https://www.github.com/Parth0415)
 
-# [Email](#email)
-skjhgf
+  Email Address:
+  [parthmali1597@gmail.com](mailto:parthmali1597@gmail.com)
 
 # [License](#license)
 MIT      

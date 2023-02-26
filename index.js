@@ -70,14 +70,14 @@ function init() {
 
       var badge = `https://img.shields.io/badge/license-${data.license}-green`
       var githubLink = `https://www.github.com/${data.gitHubUsername}`
+      var email = `mailto:${data.email}`
 
       var tableOfContents =`
 # Table Of Contents
 * [Instructions](#instructions)
 * [Information](#information)
 * [Guidelines](#guidelines)
-* [GithubUsername](#githubusername)
-* [Email](#email)
+* [Questions](#questions)
 * [License](#license)
       
       
@@ -105,11 +105,13 @@ ${data.information}
 # [Guidelines](#guidelines)
 ${data.guidelines}
 
-# [GithubUsername](#githubusername)
-[${data.gitHubUsername}](${githubLink})
+# [Questions](#questions)
+## If any questions, please reach me out on the github or on the specified email address.
+  Github Username:
+  [${data.gitHubUsername}](${githubLink})
 
-# [Email](#email)
-${data.email}
+  Email Address:
+  [${data.email}](${email})
 
 # [License](#license)
 ${data.license}      
