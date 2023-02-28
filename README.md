@@ -7,6 +7,7 @@ This application will help you to create README automatically and it is build wi
 
 
 # Table Of Contents
+* [Usage](#usage)
 * [Instructions](#instructions)
 * [Information](#information)
 * [Guidelines](#guidelines)
@@ -15,6 +16,8 @@ This application will help you to create README automatically and it is build wi
       
       
       
+# [Usage](#usage)
+Video Demonstration : 
 
 # [Instructions](#instructions)
 clone my giyHub repository and run the command node index.js 

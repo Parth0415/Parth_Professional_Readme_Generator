@@ -81,14 +81,9 @@ function init() {
 * [Guidelines](#guidelines)
 * [Questions](#questions)
 * [License](#license)
-      
-      
-      `;
+       `;
       // getting everything in one string using the md file syntax
       var  readME = "";
-
-
-
       readME = `
 # Title !["badge"](${badge})
 ${data.title}
