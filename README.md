@@ -17,16 +17,16 @@ This application will help you to create README automatically and it is build wi
       
       
 # [Usage](#usage)
-Video Demonstration : 
+Video Demonstration : https://drive.google.com/file/d/10y3Sfig7FX1BB8I7-SGVXmW5nJ89GIwz/view
 
 # [Instructions](#instructions)
-clone my giyHub repository and run the command node index.js 
+Clone my giyHub repository and run the command in node index.js.
 
 # [Information](#information)
-After you run answer the following questions asked and find custom.md generator
+After you run the command answer the following questions asked and find custom.md generator and its preview file.
 
 # [Guidelines](#guidelines)
-i cloned it from the potentila-engima repo then create a new folder and cloned it to my new repository 
+I cloned it from the potentila-engima repo then create a new folder and cloned it to my new repository 
 
 # [Questions](#questions)
 ## If any questions, please reach me out on the github or on the specified email address.
